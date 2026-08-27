@@ -1,0 +1,33 @@
+# Archivos de configuración local de IntelliJ IDEA
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+*.iws
+*.iml
+
+# Compilación y artefactos
+out/
+target/
+build/
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+# IntelliJ IDEA
+.idea/
+
+# Eclipse
+.settings/
+.classpath
+.project

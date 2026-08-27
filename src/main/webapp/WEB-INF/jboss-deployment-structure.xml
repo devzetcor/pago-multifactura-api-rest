@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.3">
+    <deployment>
+        <exclude-subsystems>
+            <subsystem name="logging" />
+            <subsystem name="jaxrs" />
+        </exclude-subsystems>
+
+        <exclusions>
+            <!-- Exclusiones críticas para evitar choque de ClassLoaders -->
+            <module name="com.ibm.mq.jakarta" />
+            <module name="jakarta.jms.api" />
+        </exclusions>
+
+        <dependencies>
+            <!-- APIs Jakarta EE 10 provistas y unificadas por el servidor JBoss -->
+            <module name="jakarta.jms.api" export="true" />
+            <module name="jakarta.persistence.api" export="true" />
+            <module name="jakarta.transaction.api" export="true" />
+            <module name="jakarta.servlet.api" export="true" />
+            <module name="org.jboss.as.naming" />
+
+            <!-- Conexión con el RAR de IBM MQ sin contaminar el Classpath -->
+            <module name="deployment.wmq.jakarta.jmsra.rar" services="import" />
+            <module name="com.ibm.mq" />
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>
