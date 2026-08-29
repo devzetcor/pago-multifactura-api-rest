@@ -1,9 +1,10 @@
-package com.davivienda.sv.app.data.beans.sesion; 
+package com.davivienda.sv.app.data.beans.sesion;
+
+import com.davivienda.sv.app.TacticoDepositosReferenciadosApplication;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import com.davivienda.sv.app.TacticoDepositosReferenciadosApplication;
-import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class LoginResponse {
 	private long niu;

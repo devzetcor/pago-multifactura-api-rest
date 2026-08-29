@@ -1,9 +1,11 @@
 package com.davivienda.sv.app.services.operaciones;
 
-import java.text.SimpleDateFormat;
-import java.util.Optional;
-
+import com.davivienda.sv.app.data.beans.Request;
+import com.davivienda.sv.app.data.beans.Response;
+import com.davivienda.sv.app.data.beans.sesion.LoginResponse;
+import com.davivienda.sv.app.dto.MigrarSesionUsuarioDataRequest;
 import com.davivienda.sv.app.util.MQCliente;
+import com.davivienda.sv.app.util.R;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.dom4j.Document;
@@ -11,11 +13,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import com.davivienda.sv.app.data.beans.Request;
-import com.davivienda.sv.app.data.beans.Response;
-import com.davivienda.sv.app.data.beans.sesion.LoginResponse;
-import com.davivienda.sv.app.dto.MigrarSesionUsuarioDataRequest;
-import com.davivienda.sv.app.util.R;
+import java.text.SimpleDateFormat;
+import java.util.Optional;
 
 @Service
 public class MigrarSesion extends TransaccionService<MigrarSesionUsuarioDataRequest, LoginResponse> {

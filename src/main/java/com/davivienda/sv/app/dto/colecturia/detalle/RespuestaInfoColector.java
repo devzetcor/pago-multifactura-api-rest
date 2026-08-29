@@ -1,10 +1,11 @@
 package com.davivienda.sv.app.dto.colecturia.detalle;
 
-import java.util.List;
 import com.davivienda.sv.app.util.SubContenedor;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import lombok.ToString;
+
+import java.util.List;
 
 @SubContenedor
 @ToString

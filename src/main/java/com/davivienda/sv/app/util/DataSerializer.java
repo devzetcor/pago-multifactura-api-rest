@@ -1,12 +1,12 @@
 package com.davivienda.sv.app.util;
 
-import java.io.IOException;
-
 import com.davivienda.sv.app.dto.Contenedor;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator;
+
+import java.io.IOException;
 
 /**
  * 

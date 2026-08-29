@@ -1,13 +1,12 @@
 package com.davivienda.sv.app.dto;
 
+import com.davivienda.sv.app.entities.sqlserver.TipoCuenta;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import java.time.LocalDateTime;
-
-import com.davivienda.sv.app.entities.sqlserver.TipoCuenta;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor

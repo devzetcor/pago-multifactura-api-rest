@@ -1,7 +1,6 @@
 package com.davivienda.sv.app.services;
 
-import java.nio.charset.StandardCharsets;
-import java.util.Base64;
+import com.davivienda.sv.app.util.TpEncrip;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.cryptonode.jncryptor.AES256JNCryptor;
@@ -10,7 +9,8 @@ import org.cryptonode.jncryptor.JNCryptor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import com.davivienda.sv.app.util.TpEncrip;
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
 
 
 @Component

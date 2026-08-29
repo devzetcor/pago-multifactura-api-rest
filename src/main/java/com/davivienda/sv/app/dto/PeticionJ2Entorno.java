@@ -1,14 +1,14 @@
 package com.davivienda.sv.app.dto;
 
 
-import javax.xml.stream.XMLOutputFactory;
-
 import com.davivienda.sv.app.util.GetData;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator;
+
+import javax.xml.stream.XMLOutputFactory;
 
 
 /**

@@ -1,13 +1,9 @@
 package com.davivienda.sv.app.entities.db2;
 
+import lombok.*;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
 
 @Data
 @Builder

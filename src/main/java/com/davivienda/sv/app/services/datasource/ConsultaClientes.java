@@ -1,16 +1,5 @@
 package com.davivienda.sv.app.services.datasource;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-
-import jakarta.persistence.EntityNotFoundException;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.springframework.stereotype.Service;
-
 import com.davivienda.sv.app.data.beans.Request;
 import com.davivienda.sv.app.data.beans.Response;
 import com.davivienda.sv.app.dto.ClienteDto;
@@ -18,6 +7,14 @@ import com.davivienda.sv.app.dto.ListaEmpresasRequest;
 import com.davivienda.sv.app.entities.sqlserver.Cliente;
 import com.davivienda.sv.app.entities.sqlserver.UsuarioWC;
 import com.davivienda.sv.app.repositories.sqlserver.ClienteRepo;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 @Service
 public class ConsultaClientes {

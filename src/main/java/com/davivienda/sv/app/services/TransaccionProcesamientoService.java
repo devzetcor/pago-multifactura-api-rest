@@ -1,17 +1,5 @@
 package com.davivienda.sv.app.services;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.stream.Collectors;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.scheduling.annotation.Async;
-import org.springframework.stereotype.Service;
-
 import com.davivienda.sv.app.data.beans.Request;
 import com.davivienda.sv.app.data.beans.RequestHeader;
 import com.davivienda.sv.app.data.beans.Response;
@@ -22,11 +10,7 @@ import com.davivienda.sv.app.dto.colecturia.detalle.PeticionConsultaColectorDto;
 import com.davivienda.sv.app.dto.colecturia.detalle.RespuestaConsultaColector;
 import com.davivienda.sv.app.dto.colecturia.pagar.PeticionPagoFactura;
 import com.davivienda.sv.app.dto.colecturia.pagar.RespuestaPagoFactura;
-import com.davivienda.sv.app.dto.colecturia.validar.DatoEnLinea;
-import com.davivienda.sv.app.dto.colecturia.validar.DatosValidar;
-import com.davivienda.sv.app.dto.colecturia.validar.RespuestaInfoColector;
-import com.davivienda.sv.app.dto.colecturia.validar.RespuestaValidarDatosPago;
-import com.davivienda.sv.app.dto.colecturia.validar.ValidarDatosPago;
+import com.davivienda.sv.app.dto.colecturia.validar.*;
 import com.davivienda.sv.app.entities.db2.EUser;
 import com.davivienda.sv.app.entities.db2.EnrolamientoColector;
 import com.davivienda.sv.app.entities.db2.FacturaTransaccion;
@@ -38,8 +22,19 @@ import com.davivienda.sv.app.services.operaciones.RegistraWRINTASService;
 import com.davivienda.sv.app.util.TransactionStatus;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import lombok.ToString;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.stereotype.Service;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class TransaccionProcesamientoService {

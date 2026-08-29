@@ -1,16 +1,11 @@
 package com.davivienda.sv.app.entities.sqlserver;
 
-import java.util.HashSet;
-import java.util.Set;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
-
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity(name = "BS_RolWC")
 @Table(name = "BS_RolWC", schema = "dbo", catalog = "BancaEmpresaPlus")

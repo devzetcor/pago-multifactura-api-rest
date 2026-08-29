@@ -1,20 +1,19 @@
 package com.davivienda.sv.app.services;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.davivienda.sv.app.dto.CuentaCargoResponseDto;
 import com.davivienda.sv.app.dto.ResumenTransaccionesPorColectorDto;
 import com.davivienda.sv.app.dto.TransaccionesPorEmpresaResponseDto;
 import com.davivienda.sv.app.entities.db2.TransaccionDTO;
 import com.davivienda.sv.app.entities.sqlserver.Cliente;
 import com.davivienda.sv.app.repositories.sqlserver.ClienteRepo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @Service
 public class TransaccionConsultaService {

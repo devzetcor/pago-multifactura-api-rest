@@ -1,15 +1,14 @@
 package com.davivienda.sv.app.services;
 
+import com.davivienda.sv.app.dto.EnrolamientoColectorDTO;
+import com.davivienda.sv.app.entities.db2.EnrolamientoColector;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import com.davivienda.sv.app.dto.EnrolamientoColectorDTO;
-import com.davivienda.sv.app.entities.db2.EnrolamientoColector;
 
 @Service
 public class EnrolamientoColectorService {

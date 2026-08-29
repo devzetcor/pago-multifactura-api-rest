@@ -1,31 +1,9 @@
 package com.davivienda.sv.app.controllers;
 
-import java.util.List;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
-import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 import com.davivienda.sv.app.data.beans.BasicResponse;
 import com.davivienda.sv.app.data.beans.Request;
 import com.davivienda.sv.app.data.beans.Response;
-import com.davivienda.sv.app.dto.ConsultaEnrolamientoDTO;
-import com.davivienda.sv.app.dto.EnrolamientoColectorDTO;
-import com.davivienda.sv.app.dto.EnrolamientoColectorListDTO;
-import com.davivienda.sv.app.dto.PeticionListaColectoresDto;
-import com.davivienda.sv.app.dto.RespuetaEnrolamientoColector;
+import com.davivienda.sv.app.dto.*;
 import com.davivienda.sv.app.dto.colecturia.detalle.PeticionConsultaColectorDto;
 import com.davivienda.sv.app.dto.colecturia.pagar.PeticionPagoFactura;
 import com.davivienda.sv.app.dto.colecturia.pagar.RespuestaPagoFactura;
@@ -39,8 +17,19 @@ import com.davivienda.sv.app.services.cysce.ListaColectoresServiceCysceImpl;
 import com.davivienda.sv.app.services.cysce.PagoFacturaServiceCysceImpl;
 import com.davivienda.sv.app.services.cysce.ValidarDatosPagoServiceCysceImpl;
 import com.davivienda.sv.app.services.validator.JWTValidator;
-
 import io.jsonwebtoken.Claims;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/colecturia")

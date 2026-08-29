@@ -1,7 +1,14 @@
 package com.davivienda.sv.app.services.cysce;
 
-import java.io.StringReader;
-
+import com.davivienda.sv.app.data.beans.Request;
+import com.davivienda.sv.app.data.beans.Response;
+import com.davivienda.sv.app.dto.PeticionListaColectoresDto;
+import com.davivienda.sv.app.dto.RespuestaJ2Entorno;
+import com.davivienda.sv.app.dto.colecturia.lista.RespuestaConsultaColector;
+import com.davivienda.sv.app.process.ProcesarListaColectores;
+import com.davivienda.sv.app.services.ErrorService;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.dom4j.Document;
@@ -11,16 +18,7 @@ import org.dom4j.io.SAXReader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.davivienda.sv.app.data.beans.Request;
-import com.davivienda.sv.app.data.beans.Response;
-import com.davivienda.sv.app.dto.PeticionListaColectoresDto;
-import com.davivienda.sv.app.dto.RespuestaJ2Entorno;
-import com.davivienda.sv.app.dto.colecturia.lista.RespuestaConsultaColector;
-import com.davivienda.sv.app.process.ProcesarListaColectores;
-import com.davivienda.sv.app.services.ErrorService;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import java.io.StringReader;
 
 @Service
 public class ListaColectoresServiceCysceImpl {

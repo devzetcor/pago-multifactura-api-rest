@@ -1,19 +1,16 @@
 package com.davivienda.sv.app.filters;
 
-import jakarta.servlet.Filter;
-import jakarta.servlet.FilterChain;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.ServletRequest;
-import jakarta.servlet.ServletResponse;
+import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.ThreadContext;
-import java.io.IOException;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
+
+import java.io.IOException;
 
 @WebFilter("/*")
 @Order(Ordered.HIGHEST_PRECEDENCE)

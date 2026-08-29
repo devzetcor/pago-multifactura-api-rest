@@ -1,13 +1,16 @@
 package com.davivienda.sv.app.controllers.exception;
+
+import com.davivienda.sv.app.data.beans.Request;
+import com.davivienda.sv.app.data.beans.RequestHeader;
+import com.davivienda.sv.app.data.beans.Response;
+import com.davivienda.sv.app.data.beans.ResponseHeader;
+import com.davivienda.sv.app.util.AppException;
+import com.davivienda.sv.app.util.ErrorResponse;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import jakarta.servlet.http.HttpServletRequest;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.sql.SQLException;
-import java.util.Map;
-
-import jakarta.servlet.http.HttpServletRequest;
-
 import org.hibernate.exception.ConstraintViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,14 +21,10 @@ import org.springframework.web.context.request.ServletWebRequest;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import com.davivienda.sv.app.data.beans.Request;
-import com.davivienda.sv.app.data.beans.RequestHeader;
-import com.davivienda.sv.app.data.beans.Response;
-import com.davivienda.sv.app.data.beans.ResponseHeader;
-import com.davivienda.sv.app.util.AppException;
-import com.davivienda.sv.app.util.ErrorResponse;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.Map;
 
 @ControllerAdvice
 public class ResponseExceptionHandler extends ResponseEntityExceptionHandler {

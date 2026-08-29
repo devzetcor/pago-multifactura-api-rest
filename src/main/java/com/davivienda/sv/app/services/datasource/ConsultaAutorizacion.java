@@ -1,42 +1,26 @@
 package com.davivienda.sv.app.services.datasource;
 
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.Set;
-import java.util.stream.Collectors;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.davivienda.sv.app.dto.BatchOptimizedRequest;
 import com.davivienda.sv.app.dto.TransaccionesDefinicionesRequest;
 import com.davivienda.sv.app.entities.db2.DetalleTransaccionAutorizacion;
 import com.davivienda.sv.app.entities.db2.DrefTransaccion;
 import com.davivienda.sv.app.entities.db2.TransaccionDTO;
-import com.davivienda.sv.app.entities.sqlserver.DefinicionAutorizacion;
-import com.davivienda.sv.app.entities.sqlserver.DetalleAutorizacion;
-import com.davivienda.sv.app.entities.sqlserver.RolUsuario;
-import com.davivienda.sv.app.entities.sqlserver.RolWC;
-import com.davivienda.sv.app.entities.sqlserver.UsuarioWC;
-import com.davivienda.sv.app.repositories.sqlserver.ClienteRepo;
-import com.davivienda.sv.app.repositories.sqlserver.DefinicionAutorizacionRepo;
-import com.davivienda.sv.app.repositories.sqlserver.DetalleAutorizacionRepo;
-import com.davivienda.sv.app.repositories.sqlserver.DetalleTokenAutorizacionRepo;
-import com.davivienda.sv.app.repositories.sqlserver.MovimientoEfectivoRepo;
-import com.davivienda.sv.app.repositories.sqlserver.RolUsuarioRepo;
-import com.davivienda.sv.app.repositories.sqlserver.UsuarioWCRepo;
+import com.davivienda.sv.app.entities.sqlserver.*;
+import com.davivienda.sv.app.repositories.sqlserver.*;
 import com.davivienda.sv.app.services.BatchHelperRestClient;
 import com.davivienda.sv.app.services.DetalleTransaccionAutorizacionRestClient;
 import com.davivienda.sv.app.services.DrefTransaccionRestClient;
 import com.davivienda.sv.app.services.EnrolamientoColectorJdbcRestClient;
 import com.davivienda.sv.app.util.AppException;
 import com.davivienda.sv.app.util.TransactionStatus;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.time.LocalDateTime;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 public class ConsultaAutorizacion {

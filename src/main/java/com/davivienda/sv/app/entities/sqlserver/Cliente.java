@@ -1,17 +1,11 @@
 package com.davivienda.sv.app.entities.sqlserver;
 
-import java.io.Serializable;
-import java.util.Set;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
-
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.io.Serializable;
+import java.util.Set;
 
 @Entity(name = "BSCliente")
 @Table(name = "BS_Cliente", schema = "dbo", catalog = "BancaEmpresaPlus")

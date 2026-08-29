@@ -1,14 +1,5 @@
 package com.davivienda.sv.app.services;
 
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
-import java.util.List;
-import java.util.stream.Collectors;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.davivienda.sv.app.dto.ConsultaEnrolamientoDTO;
 import com.davivienda.sv.app.entities.db2.DrefFacturaTransaccion;
 import com.davivienda.sv.app.entities.db2.DrefTransaccion;
@@ -17,6 +8,15 @@ import com.davivienda.sv.app.entities.db2.TransaccionDTO;
 import com.davivienda.sv.app.services.datasource.ConsultaAutorizacion;
 import com.davivienda.sv.app.util.AppException;
 import com.davivienda.sv.app.util.TransactionStatus;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class TransaccionDetalleService {

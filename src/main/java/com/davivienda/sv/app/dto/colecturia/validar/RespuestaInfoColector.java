@@ -1,12 +1,12 @@
 package com.davivienda.sv.app.dto.colecturia.validar;
 
-import java.util.List;
-
 import com.davivienda.sv.app.dto.colecturia.detalle.AtributoColectorFull;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
-
 import lombok.ToString;
+
+import java.util.List;
+
 @ToString
 public class RespuestaInfoColector {
 	@JacksonXmlProperty(localName = "idColector")

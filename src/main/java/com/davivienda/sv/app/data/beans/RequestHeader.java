@@ -1,10 +1,11 @@
 package com.davivienda.sv.app.data.beans;
 
+import com.davivienda.sv.app.TacticoDepositosReferenciadosApplication;
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import com.davivienda.sv.app.TacticoDepositosReferenciadosApplication;
-import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class RequestHeader {
 	private String idTransaccion;

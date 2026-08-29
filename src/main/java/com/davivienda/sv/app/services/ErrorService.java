@@ -1,12 +1,11 @@
 package com.davivienda.sv.app.services;
 
-import java.text.MessageFormat;
-import java.util.Properties;
-
-import org.springframework.stereotype.Component;
-
 import com.davivienda.sv.app.util.R;
 import com.davivienda.sv.app.util.ResourceLocator;
+import org.springframework.stereotype.Component;
+
+import java.text.MessageFormat;
+import java.util.Properties;
 
 @Component
 public class ErrorService {

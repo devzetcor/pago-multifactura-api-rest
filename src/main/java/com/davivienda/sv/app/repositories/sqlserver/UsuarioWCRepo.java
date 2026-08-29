@@ -1,13 +1,12 @@
 package com.davivienda.sv.app.repositories.sqlserver;
 
-import java.util.List;
-import java.util.Optional;
-
+import com.davivienda.sv.app.entities.sqlserver.UsuarioWC;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.davivienda.sv.app.entities.sqlserver.UsuarioWC;
+import java.util.List;
+import java.util.Optional;
 
 public interface UsuarioWCRepo extends JpaRepository<UsuarioWC, String> {
 

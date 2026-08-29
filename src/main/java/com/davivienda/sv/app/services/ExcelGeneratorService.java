@@ -1,18 +1,16 @@
 package com.davivienda.sv.app.services;
 
+import com.davivienda.sv.app.entities.db2.FacturaTransaccion; // Asegúrate de importar la clase correcta
+import com.davivienda.sv.app.entities.db2.TransaccionDTO;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.*;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.util.IOUtils;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
-import com.davivienda.sv.app.entities.db2.TransaccionDTO;
-import com.davivienda.sv.app.entities.db2.FacturaTransaccion; // Asegúrate de importar la clase correcta
-
 import java.io.ByteArrayOutputStream;
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Base64;
 import java.util.List;

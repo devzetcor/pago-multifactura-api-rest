@@ -1,17 +1,12 @@
 package com.davivienda.sv.app.services;
 
-import java.util.Optional;
-
-import jakarta.jms.JMSException;
-import jakarta.jms.Message;
-import jakarta.jms.MessageConsumer;
-import jakarta.jms.MessageProducer;
-import jakarta.jms.Session;
-import jakarta.jms.TextMessage;
+import jakarta.jms.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.SessionCallback;
+
+import java.util.Optional;
 
 // Import actualizado al paquete Jakarta de IBM MQ
 

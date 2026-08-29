@@ -1,12 +1,5 @@
 package com.davivienda.sv.app.controllers;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.*;
 import com.davivienda.sv.app.data.beans.Request;
 import com.davivienda.sv.app.data.beans.Response;
 import com.davivienda.sv.app.dto.ListaEmpresasRequest;
@@ -15,6 +8,13 @@ import com.davivienda.sv.app.services.SecurityService;
 import com.davivienda.sv.app.services.datasource.ConsultaClientes;
 import com.davivienda.sv.app.services.validator.JWTValidator;
 import io.jsonwebtoken.Claims;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/colecturia")

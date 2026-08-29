@@ -1,8 +1,8 @@
 package com.davivienda.sv.app.dto;
 
-import java.util.Objects;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.util.Objects;
 
 public class ObjetoSesionUsuarioDataResponse {
 	

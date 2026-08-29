@@ -1,11 +1,12 @@
 package com.davivienda.sv.app.data.beans;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import com.davivienda.sv.app.TacticoDepositosReferenciadosApplication;
 import com.davivienda.sv.app.services.ErrorService;
 import com.fasterxml.jackson.annotation.JsonFormat;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class ResponseHeader {
 	private String idTransaccion;

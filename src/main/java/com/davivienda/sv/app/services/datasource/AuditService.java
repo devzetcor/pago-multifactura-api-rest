@@ -1,10 +1,7 @@
 package com.davivienda.sv.app.services.datasource;
 
-import java.sql.SQLException;
-import java.sql.Timestamp;
-import java.util.List;
-import java.util.stream.Collectors;
-
+import com.davivienda.sv.app.entities.db2.*;
+import com.davivienda.sv.app.services.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,18 +9,10 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.davivienda.sv.app.entities.db2.DetalleTransaccionAutorizacion;
-import com.davivienda.sv.app.entities.db2.DetalleTransaccionAutorizacionAudit;
-import com.davivienda.sv.app.entities.db2.DrefFacturaTransaccion;
-import com.davivienda.sv.app.entities.db2.DrefFacturasTransaccionAudit;
-import com.davivienda.sv.app.entities.db2.DrefTransaccion;
-import com.davivienda.sv.app.entities.db2.DrefTransaccionesAudit;
-import com.davivienda.sv.app.services.DetalleTransaccionAutorizacionAuditRestClient;
-import com.davivienda.sv.app.services.DetalleTransaccionAutorizacionRestClient;
-import com.davivienda.sv.app.services.DreFacturaTransaccionRestClient;
-import com.davivienda.sv.app.services.DrefFacturasTransaccionAuditRestClient;
-import com.davivienda.sv.app.services.DrefTransaccionRestClient;
-import com.davivienda.sv.app.services.DrefTransaccionesAuditRestClient;
+import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class AuditService {

@@ -1,13 +1,12 @@
 package com.davivienda.sv.app.util;
 
-import java.util.Optional;
-
+import jakarta.jms.Message;
+import jakarta.jms.TextMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jms.core.JmsTemplate;
 
-import jakarta.jms.Message;
-import jakarta.jms.TextMessage;
+import java.util.Optional;
 
 public class MQCliente {
 

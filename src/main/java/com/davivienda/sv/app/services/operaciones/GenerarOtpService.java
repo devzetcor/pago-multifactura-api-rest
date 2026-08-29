@@ -1,20 +1,19 @@
 package com.davivienda.sv.app.services.operaciones;
 
-import java.util.Optional;
-
-import com.davivienda.sv.app.util.MQCliente;
-import org.dom4j.Document;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Service;
-
 import com.davivienda.sv.app.data.beans.BasicResponse;
 import com.davivienda.sv.app.data.beans.Request;
 import com.davivienda.sv.app.data.beans.Response;
 import com.davivienda.sv.app.data.beans.token.GenerarOtpRequest;
+import com.davivienda.sv.app.util.MQCliente;
 import com.davivienda.sv.app.util.R;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.dom4j.Document;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 public class GenerarOtpService extends TransaccionService<GenerarOtpRequest, BasicResponse> {

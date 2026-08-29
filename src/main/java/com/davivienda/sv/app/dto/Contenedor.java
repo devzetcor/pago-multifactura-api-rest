@@ -1,8 +1,5 @@
 package com.davivienda.sv.app.dto;
 
-import java.io.Serializable;
-import java.util.LinkedHashMap;
-
 import com.davivienda.sv.app.util.DataDeserializer;
 import com.davivienda.sv.app.util.DataSerializer;
 import com.davivienda.sv.app.util.ToXML;
@@ -12,6 +9,8 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 
+import java.io.Serializable;
+import java.util.LinkedHashMap;
 
 
 /**

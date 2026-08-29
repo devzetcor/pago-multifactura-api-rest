@@ -1,10 +1,8 @@
 package com.davivienda.sv.app.util;
 
-import java.io.IOException;
-import java.lang.reflect.Type;
-
+import com.davivienda.sv.app.data.beans.Request;
+import com.davivienda.sv.app.data.beans.RequestHeader;
 import jakarta.servlet.http.HttpServletRequest;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.http.HttpInputMessage;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -12,8 +10,8 @@ import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.mvc.method.annotation.RequestBodyAdvice;
 
-import com.davivienda.sv.app.data.beans.Request;
-import com.davivienda.sv.app.data.beans.RequestHeader;
+import java.io.IOException;
+import java.lang.reflect.Type;
 
 @Component
 public class IpInjectorRequestBodyAdvice implements RequestBodyAdvice {

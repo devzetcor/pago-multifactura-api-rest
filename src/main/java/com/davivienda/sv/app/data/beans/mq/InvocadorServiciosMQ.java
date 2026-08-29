@@ -1,11 +1,12 @@
 package com.davivienda.sv.app.data.beans.mq;
 
-import java.util.Map;
+import com.cysce.mq.client.CYSWMQClient;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import com.cysce.mq.client.CYSWMQClient;
+
+import java.util.Map;
 
 @Service
 public class InvocadorServiciosMQ {

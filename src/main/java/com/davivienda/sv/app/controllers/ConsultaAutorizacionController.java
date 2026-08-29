@@ -1,14 +1,15 @@
 package com.davivienda.sv.app.controllers;
+
+import com.davivienda.sv.app.data.beans.Request;
+import com.davivienda.sv.app.dto.AutorizacionRequestDto;
+import com.davivienda.sv.app.services.datasource.ConsultaAutorizacion;
+import com.davivienda.sv.app.services.validator.JWTValidator;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
-import com.davivienda.sv.app.data.beans.Request;
-import com.davivienda.sv.app.dto.AutorizacionRequestDto;
-import com.davivienda.sv.app.services.datasource.ConsultaAutorizacion;
-import com.davivienda.sv.app.services.validator.JWTValidator;
 
 
 @RestController

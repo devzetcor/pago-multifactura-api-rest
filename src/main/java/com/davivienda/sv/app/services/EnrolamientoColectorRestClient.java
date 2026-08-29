@@ -1,25 +1,19 @@
 package com.davivienda.sv.app.services;
 
-import java.net.URI;
-import java.util.Arrays;
-import java.util.List;
-
+import com.davivienda.sv.app.entities.db2.EnrolamientoColector;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.davivienda.sv.app.entities.db2.EnrolamientoColector;
+import java.net.URI;
+import java.util.Arrays;
+import java.util.List;
 
 @Component
 public class EnrolamientoColectorRestClient {

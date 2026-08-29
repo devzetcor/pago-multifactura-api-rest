@@ -1,14 +1,13 @@
 package com.davivienda.sv.app.repositories.sqlserver;
 
-import java.util.List;
-import java.util.Optional;
-
+import com.davivienda.sv.app.entities.sqlserver.RolUsuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.davivienda.sv.app.entities.sqlserver.RolUsuario;
+import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface RolUsuarioRepo extends JpaRepository<RolUsuario, Long> {

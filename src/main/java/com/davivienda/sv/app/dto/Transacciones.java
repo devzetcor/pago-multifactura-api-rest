@@ -1,8 +1,8 @@
 package com.davivienda.sv.app.dto;
 
-import java.util.List;
-
 import com.davivienda.sv.app.entities.db2.TransaccionDTO;
+
+import java.util.List;
 
 public class Transacciones {
 	List<TransaccionDTO> transacciones;

@@ -1,5 +1,8 @@
 package com.davivienda.sv.app.controllers;
 
+import com.davivienda.sv.app.data.beans.Request;
+import com.davivienda.sv.app.data.beans.Response;
+import com.davivienda.sv.app.services.validator.JWTValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -7,14 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import com.davivienda.sv.app.data.beans.Request;
-import com.davivienda.sv.app.data.beans.Response;
-import com.davivienda.sv.app.services.validator.JWTValidator;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/depositos")

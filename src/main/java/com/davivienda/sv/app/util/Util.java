@@ -1,11 +1,11 @@
 package com.davivienda.sv.app.util;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 
 public class Util {
 	public static ResponseEntity<Object> generarResponse(HttpStatus status, String mensaje){

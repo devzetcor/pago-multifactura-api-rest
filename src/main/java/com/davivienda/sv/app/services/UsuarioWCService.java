@@ -1,11 +1,5 @@
 package com.davivienda.sv.app.services;
 
-import java.util.List;
-import java.util.stream.Collectors;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.springframework.stereotype.Service;
-
 import com.davivienda.sv.app.data.beans.Request;
 import com.davivienda.sv.app.data.beans.Response;
 import com.davivienda.sv.app.dto.InfoUsuarioDto;
@@ -14,6 +8,12 @@ import com.davivienda.sv.app.dto.UsuarioClienteRequestDto;
 import com.davivienda.sv.app.entities.sqlserver.UsuarioWC;
 import com.davivienda.sv.app.repositories.sqlserver.UsuarioWCRepo;
 import com.davivienda.sv.app.util.UserStatus;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class UsuarioWCService {

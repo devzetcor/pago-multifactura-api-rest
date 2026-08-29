@@ -1,28 +1,5 @@
 package com.davivienda.sv.app.controllers;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 import com.davivienda.sv.app.data.beans.BasicRequest;
 import com.davivienda.sv.app.data.beans.BasicResponse;
 import com.davivienda.sv.app.data.beans.Request;
@@ -33,18 +10,26 @@ import com.davivienda.sv.app.dto.Transacciones;
 import com.davivienda.sv.app.entities.db2.DrefTransaccion;
 import com.davivienda.sv.app.entities.db2.FacturaTransaccion;
 import com.davivienda.sv.app.entities.db2.TransaccionDTO;
-import com.davivienda.sv.app.services.DrefTransaccionRestClient;
-import com.davivienda.sv.app.services.ErrorService;
-import com.davivienda.sv.app.services.ExcelGeneratorService;
-import com.davivienda.sv.app.services.JWTService;
-import com.davivienda.sv.app.services.SecurityService;
-import com.davivienda.sv.app.services.TransaccionDetalleService;
-import com.davivienda.sv.app.services.TransaccionProcesamientoService;
+import com.davivienda.sv.app.services.*;
 import com.davivienda.sv.app.services.datasource.ConsultaAutorizacion;
 import com.davivienda.sv.app.services.validator.JWTValidator;
 import com.davivienda.sv.app.util.TransactionStatus;
-
 import io.jsonwebtoken.Claims;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/transacciones")

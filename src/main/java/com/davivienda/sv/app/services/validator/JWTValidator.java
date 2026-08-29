@@ -1,7 +1,12 @@
 package com.davivienda.sv.app.services.validator;
 
+import com.davivienda.sv.app.data.beans.Request;
+import com.davivienda.sv.app.data.beans.Status;
+import com.davivienda.sv.app.services.JWTService;
+import com.davivienda.sv.app.services.operaciones.StatusService;
+import com.davivienda.sv.app.util.AppException;
+import io.jsonwebtoken.Claims;
 import jakarta.servlet.http.HttpServletRequest;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,14 +14,6 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
-
-import com.davivienda.sv.app.data.beans.Request;
-import com.davivienda.sv.app.data.beans.Status;
-import com.davivienda.sv.app.services.JWTService;
-import com.davivienda.sv.app.services.operaciones.StatusService;
-import com.davivienda.sv.app.util.AppException;
-
-import io.jsonwebtoken.Claims;
 
 @Component
 public class JWTValidator implements Validator {

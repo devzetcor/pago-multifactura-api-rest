@@ -1,16 +1,5 @@
 package com.davivienda.sv.app.services;
 
-import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.stream.Collectors;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.davivienda.sv.app.dto.EnrolamientoColectorDTO;
 import com.davivienda.sv.app.dto.colecturia.detalle.AtributoColectorFull;
 import com.davivienda.sv.app.entities.db2.DrefTransaccion;
@@ -23,6 +12,17 @@ import com.davivienda.sv.app.repositories.sqlserver.ClienteRepo;
 import com.davivienda.sv.app.repositories.sqlserver.CuentaRepository;
 import com.davivienda.sv.app.repositories.sqlserver.UsuarioWCRepo;
 import com.davivienda.sv.app.util.AppException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class SecurityService {

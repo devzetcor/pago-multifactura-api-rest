@@ -1,22 +1,18 @@
 package com.davivienda.sv.app.services;
 
-import java.util.List;
+import com.davivienda.sv.app.dto.ActualizarFacturaCompletaRequest;
+import com.davivienda.sv.app.dto.ActualizarFacturaDescripcionRequest;
+import com.davivienda.sv.app.entities.db2.DrefFacturaTransaccion;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-import com.davivienda.sv.app.dto.ActualizarFacturaCompletaRequest;
-import com.davivienda.sv.app.dto.ActualizarFacturaDescripcionRequest;
-import com.davivienda.sv.app.entities.db2.DrefFacturaTransaccion;
+import java.util.List;
 
 @Component
 public class DreFacturaTransaccionRestClient {

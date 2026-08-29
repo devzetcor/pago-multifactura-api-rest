@@ -1,12 +1,11 @@
 package com.davivienda.sv.app.repositories.sqlserver;
 
-import java.util.List;
-
+import com.davivienda.sv.app.entities.sqlserver.DetalleAutorizacion;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.davivienda.sv.app.entities.sqlserver.DetalleAutorizacion;
+import java.util.List;
 
 public interface DetalleAutorizacionRepo extends JpaRepository<DetalleAutorizacion, Long> {
 

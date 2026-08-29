@@ -1,12 +1,10 @@
 package com.davivienda.sv.app.configuration;
 
+import com.davivienda.sv.app.services.datasource.AuditService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-
-import com.davivienda.sv.app.services.datasource.AuditService;
-
 
 import java.sql.Timestamp;
 import java.util.Date;

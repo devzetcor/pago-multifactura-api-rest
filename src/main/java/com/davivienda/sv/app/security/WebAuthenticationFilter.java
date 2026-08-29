@@ -1,6 +1,5 @@
 package com.davivienda.sv.app.security;
 
-import java.io.IOException;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
@@ -12,6 +11,8 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.ThreadContext; // Usar ThreadContext de Log4j2
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.GenericFilterBean;
+
+import java.io.IOException;
 
 @Component
 public class WebAuthenticationFilter extends GenericFilterBean {
